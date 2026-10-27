@@ -1,0 +1,189 @@
+/* PC・マイクラ研究所：MODの入れ方ページ用CSS */
+
+/* ページ全体 */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f2f2f2;
+}
+
+/* 上部ヘッダー */
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 0 20px;
+}
+
+/* ヘッダーのメニューボタン */
+#menuButton {
+    font-size: 25px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* 本文を左側の目次の分だけ右へ */
+main {
+    max-width: 900px;
+    margin: 0 auto 0 240px;
+    padding: 20px;
+}
+
+/* ページ内目次（左側に固定） */
+.page-menu {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 220px;
+    height: calc(100vh - 100px);
+    box-sizing: border-box;
+    padding: 15px;
+    overflow-y: auto;
+    background: white;
+    border-right: 1px solid #ccc;
+}
+
+.page-menu h3 {
+    margin-top: 0;
+}
+
+.page-menu a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.page-menu a:hover {
+    background: #eee;
+}
+
+/* 各説明セクション */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+/* 説明に使う画像 */
+section img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 20px auto;
+}
+
+/* 目次から移動するときに滑らかにする */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 目次ジャンプ時の見出し位置を少し調整 */
+section {
+    scroll-margin-top: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", sans-serif;
+    background: #f2f2f2;
+    color: #222;
+}
+
+header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+h2 {
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #555;
+}
+
+.question-list p {
+    color: #666;
+}
+
+a {
+    color: #1769aa;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+        margin: 15px auto;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+}
